@@ -8,5 +8,5 @@ _templates
 _static
 _build
 .~lock*
-collectedstatic/
+static/
 media/

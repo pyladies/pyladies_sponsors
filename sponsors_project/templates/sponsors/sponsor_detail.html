@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ sponsor.name }} : Sponsor
+{% endblock %}
+
+{% block content %}
+<h1>{{ sponsor.name }}</h1>
+
+<h3>Date Published</h3>
+<p> {{ sponsor.pub_date }}</p>
+
+{% endblock %}
+
