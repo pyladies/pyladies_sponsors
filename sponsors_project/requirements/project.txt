@@ -1,0 +1,4 @@
+Django==1.3
+-e git://github.com/audreyr/django-startcbv#egg=django-startcbv-0.1.0-dev
+South==0.7.3
+

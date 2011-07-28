@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+All Sponsors
+{% endblock %}
+
+{% block content %}
+<h1>All Sponsors</h1>
+
+{% if latest_sponsor_list %}
+    <ul>
+    {% for sponsor in latest_sponsor_list %}
+        <li><a href="{% url sponsor_detail sponsor.slug %}">{{ sponsor.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No sponsors are available.</p>
+{% endif %}
+{% endblock %}
